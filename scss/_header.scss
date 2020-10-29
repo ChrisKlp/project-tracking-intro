@@ -19,7 +19,7 @@
     &__container {
         $padding: 3.2rem;
 
-        @extend .container;
+        @extend %container;
 
         padding-top: $padding;
         padding-bottom: $padding;
@@ -108,7 +108,7 @@
     }
 
     &__item {
-        @extend .heading;
+        @extend %heading;
 
         display: block;
         font-size: 1.5em;

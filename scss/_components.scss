@@ -1,4 +1,4 @@
-.container {
+%container {
     margin: 0 auto;
     padding: 0 3rem;
     max-width: 111rem;
@@ -9,12 +9,12 @@
     }
 }
 
-.heading {
+%heading {
     font: 700 2.4rem / 100% $font-headings;
     color: $color-very-dark-blue;
 }
 
-.text {
+%text {
     font: 1.8rem / 130% $font-body;
     color: $color-dark-grayish-blue;
 }
@@ -26,7 +26,7 @@
     text-transform: uppercase;
 }
 
-.button {
+%button {
     padding: 1.3rem 2.5rem;
     font: 700 1.4rem / 100% $font-headings;
     text-transform: uppercase;

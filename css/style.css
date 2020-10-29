@@ -227,25 +227,25 @@ input {
   font-size: inherit;
 }
 
-.container, .header__container, .intro__container {
+.header__container, .intro__container {
   margin: 0 auto;
   padding: 0 3rem;
   max-width: 111rem;
 }
 
 @media (min-width: 768px) {
-  .container, .header__container, .intro__container {
+  .header__container, .intro__container {
     padding: 0;
     width: 90%;
   }
 }
 
-.heading, .nav__item, .nav__item--accent, .intro__heading {
+.nav__item, .nav__item--accent, .intro__heading {
   font: 700 2.4rem/100% "Barlow Condensed", sans-serif;
   color: #242942;
 }
 
-.text, .intro__text {
+.intro__text {
   font: 1.8rem/130% "Barlow", sans-serif;
   color: #5b5f71;
 }
@@ -257,7 +257,7 @@ input {
   text-transform: uppercase;
 }
 
-.button, .intro__button {
+.intro__button {
   padding: 1.3rem 2.5rem;
   font: 700 1.4rem/100% "Barlow Condensed", sans-serif;
   text-transform: uppercase;
@@ -271,17 +271,17 @@ input {
   transition: background-color 0.3s;
 }
 
-.button:hover, .intro__button:hover {
+.intro__button:hover {
   background-color: #ff8f8f;
 }
 
-.button:focus, .intro__button:focus {
+.intro__button:focus {
   outline: none;
   background-color: #ff6b6b;
 }
 
 @media (min-width: 768px) {
-  .button, .intro__button {
+  .intro__button {
     font-size: 1.7rem;
     padding: 1.5rem 3rem;
   }

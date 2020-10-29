@@ -1,16 +1,16 @@
 .intro {
     position: relative;
     overflow: hidden;
-    
+
     &__image {
         margin-top: 2rem;
         height: 65.3vw;
         max-height: 35rem;
-        
+
         img {
             width: auto;
         }
-        
+
         @include s-md {
             text-align: center;
             order: 1;
@@ -23,9 +23,9 @@
             left: calc(50% + 2.8rem);
         }
     }
-    
+
     &__container {
-        @extend .container;
+        @extend %container;
 
         padding-top: 8.5rem;
         padding-bottom: 7rem;
@@ -43,7 +43,7 @@
     }
 
     &__heading {
-        @extend .heading;
+        @extend %heading;
 
         margin-bottom: 2rem;
         text-transform: uppercase;
@@ -60,7 +60,7 @@
     }
 
     &__text {
-        @extend .text;
+        @extend %text;
 
         margin-bottom: 3rem;
         max-width: 90%;
@@ -82,7 +82,7 @@
     }
 
     &__button {
-        @extend .button;
+        @extend %button;
     }
 
     &__cta-info {
@@ -96,5 +96,4 @@
             letter-spacing: 0.5rem;
         }
     }
-
 }

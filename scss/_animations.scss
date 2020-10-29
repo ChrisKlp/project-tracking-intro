@@ -1,0 +1,57 @@
+$delay: (100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
+
+@each $time in $delay {
+    .delay#{$time} {
+        animation-delay: #{$time}ms;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-left-in {
+    0% {
+        transform: translateX(-8rem);
+    }
+}
+
+@keyframes slide-bottom-in {
+    0% {
+        transform: translateY(8rem);
+    }
+}
+
+@keyframes slide-right-in {
+    0% {
+        transform: translateX(8rem);
+    }
+}
+
+%animation {
+    animation-timing-function: cubic-bezier(0.13, 0.66, 0.36, 1);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fade-left-in {
+    @extend %animation;
+    animation-name: slide-left-in, fade-in;
+}
+
+.fade-right-in {
+    @extend %animation;
+    animation-name: slide-right-in, fade-in;
+}
+
+.fade-bottom-in {
+    @extend %animation;
+    animation-name: slide-bottom-in, fade-in;
+}
+
+.fade-in {
+    @extend %animation;
+    animation-name: fade-in;
+}

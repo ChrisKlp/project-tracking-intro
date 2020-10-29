@@ -1,0 +1,64 @@
+.container {
+    margin: 0 auto;
+    padding: 0 3rem;
+    max-width: 111rem;
+
+    @include s-md {
+        padding: 0;
+        width: 90%;
+    }
+}
+
+.heading {
+    font: 700 2.4rem / 100% $font-headings;
+    color: $color-very-dark-blue;
+}
+
+.text {
+    font: 1.8rem / 130% $font-body;
+    color: $color-dark-grayish-blue;
+}
+
+.text-secondary {
+    font: 400 1.5rem / 100% $font-headings;
+    letter-spacing: 0.5rem;
+    color: $color-grayish-blue;
+    text-transform: uppercase;
+}
+
+.button {
+    padding: 1.3rem 2.5rem;
+    font: 700 1.4rem / 100% $font-headings;
+    text-transform: uppercase;
+    color: $color-white;
+    letter-spacing: 0.1rem;
+    background-color: $color-red;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: lighten($color-red, 10%);
+    }
+
+    &:focus {
+        outline: none;
+        background-color: lighten($color-red, 3%);
+    }
+
+    @include s-md {
+        font-size: 1.7rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+.badge {
+    padding: 0.5rem 1.1rem;
+    font: 700 1.5rem / 100% $font-headings;
+    text-transform: uppercase;
+    color: $color-white;
+    letter-spacing: 0.05rem;
+    border-radius: 2em;
+    background-color: $color-very-dark-blue;
+}

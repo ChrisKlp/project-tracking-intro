@@ -1,0 +1,100 @@
+.intro {
+    position: relative;
+    overflow: hidden;
+    
+    &__image {
+        margin-top: 2rem;
+        height: 65.3vw;
+        max-height: 35rem;
+        
+        img {
+            width: auto;
+        }
+        
+        @include s-md {
+            text-align: center;
+            order: 1;
+        }
+
+        @include s-lg {
+            position: absolute;
+            margin-top: 5.2rem;
+            max-height: 46.4rem;
+            left: calc(50% + 2.8rem);
+        }
+    }
+    
+    &__container {
+        @extend .container;
+
+        padding-top: 8.5rem;
+        padding-bottom: 7rem;
+
+        @include s-lg {
+            padding-top: 9.9rem;
+        }
+    }
+
+    &__badge {
+        margin-bottom: 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__heading {
+        @extend .heading;
+
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-size: 4rem;
+
+        @include s-md {
+            font-size: 6.4rem;
+            max-width: 50rem;
+        }
+
+        @include s-lg {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    &__text {
+        @extend .text;
+
+        margin-bottom: 3rem;
+        max-width: 90%;
+
+        @include s-md {
+            max-width: 28rem;
+        }
+
+        @include s-lg {
+            margin-bottom: 6.8rem;
+        }
+    }
+
+    &__cta {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    &__button {
+        @extend .button;
+    }
+
+    &__cta-info {
+        @extend .text-secondary;
+
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+
+        @include s-md {
+            font-size: 1.6rem;
+            letter-spacing: 0.5rem;
+        }
+    }
+
+}

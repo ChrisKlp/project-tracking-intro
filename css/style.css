@@ -456,14 +456,14 @@ input {
   }
 }
 
-[menu-hidden] {
+[data-hidden] {
   visibility: hidden;
   opacity: 0;
   top: 8rem;
 }
 
 @media (min-width: 992px) {
-  [menu-hidden] {
+  [data-hidden] {
     visibility: visible;
     opacity: 1;
   }

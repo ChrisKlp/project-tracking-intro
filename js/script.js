@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector('.header__menu-btn');
 const nav = document.querySelector('.nav');
-const hiddenNavAtr = 'menu-hidden';
+const hiddenNavAtr = 'data-hidden';
 const closeIconAtr = 'icon-close';
 
 const menuToggle = () => {
